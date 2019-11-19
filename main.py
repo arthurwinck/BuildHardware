@@ -43,7 +43,7 @@ if menu == "A":
     menu_cliente = menu_cliente()
 
     if menu_cliente == "A":
-        
+            
 
 
 elif menu == "B":
