@@ -31,10 +31,10 @@ def Escolher_Placa_mae():
     print('-'*20, f'Primeiro Produto:', '-'*20)
     print(f'Modelo: {at1["a1"]}',
           f'Preço: R${at1["a2"]},00',
-          f'Socket do Processador: {at1["a3"]}',
-          f'Socket da Memória Ram: {at1["a4"]}',
-          f'Tamanho da Placa Mãe: {at1["a5"]}',
-          f'Voltagem consumida: {at1["a6"]}')
+          f'Socket do Processador: {at1["a3"]}\n'
+          f'Socket da Memória Ram: {at1["a4"]}\n'
+          f'Tamanho da Placa Mãe: {at1["a5"]}\n'
+          f'Voltagem consumida: {at1["a6"]}\n')
     componente1 = nome_do_componente(at1['a1'],
                                      at1['a2'],
                                      at1['a3'],
