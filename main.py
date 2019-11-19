@@ -25,5 +25,8 @@ def menu_cliente():
 menu = menu()
 
 if menu == "A":
-    menu_clientes
+    print("[A] Cadastrar Clientes")
+    print("[B] ")
+    
+    menu_clientes = str(input("O que você deseja fazer?")).upper()
 
