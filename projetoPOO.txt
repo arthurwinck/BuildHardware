@@ -1,0 +1,14 @@
+1-Cadastrar (Nome, CPF,VIP)
+1.1-Alterar --
+1.2-Excluir --
+
+2-Montar Build
+2.1-Alterar Componente
+2.2-Excluir Compontente
+
+--
+
+3-Fechar Compra [S/N]
+ --Frete
+ --Método
+
