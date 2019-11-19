@@ -13,9 +13,10 @@ def menu():
     return menu
 
 def menu_cliente():
-    print("[A] Alterar o Cadastro de um Cliente")
-    print("[B] Excluir o Cadastro de um Cliente")
-    print("[C] Voltar")
+    print("[A] Cadastrar de um Cliente")
+    print("[B] Alterar o Cadastro de um Cliente")
+    print("[C] Excluir o Cadastro de um Cliente")
+    print("[D] Voltar")
 
     menu_cliente = str(input("O que você deseja fazer")).upper()
     while menu != "A" and menu != "B" and menu != "C":
@@ -41,6 +42,12 @@ if menu == "A":
     
     menu_cliente = menu_cliente()
 
+    if menu_cliente == "A":
+        
+
+
 elif menu == "B":
 
-    menu_build = menu_build
+    menu_build = menu_build()
+
+    
