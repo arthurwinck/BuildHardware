@@ -27,7 +27,7 @@ def Escolher_Comp_Placa_mae():
                  name_at6: 80},
                 {name_at1: "PepinoBoard 7000",
                  name_at2: 350,
-                 name_at3: 1155,
+                 name_at3: "1155",
                  name_at4: "DDR3",
                  name_at5: "Micro-ATX",
                  name_at6: 70},

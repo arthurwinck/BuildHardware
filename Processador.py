@@ -1,7 +1,7 @@
 class Comp_Processador:
-    def __init__(self):
-        self.modelo = None
-        self.preco = None
-        self.socket = None
-        self.voltagem = None
+    def __init__(self, modelo, preco, socket, voltagem):
+        self.modelo = modelo
+        self.preco = preco
+        self.socket = socket
+        self.voltagem = voltagem
 

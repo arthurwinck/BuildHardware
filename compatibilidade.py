@@ -8,4 +8,3 @@ class Compatibilidade:
 
     def ver_watts(self, ):
         pass
-

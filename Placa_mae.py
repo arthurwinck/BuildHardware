@@ -6,4 +6,3 @@ class Comp_Placa_mae:
         self.socket_memoria_ram = socket_memoria_ram
         self.socket = socket
         self.voltagem = voltagem
-
