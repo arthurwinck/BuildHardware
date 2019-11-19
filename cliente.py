@@ -2,13 +2,12 @@
 #-*- coding: utf-8 -*-
 
 class Cliente:
-    def __init__(self):
-        self.nome = None
-        self.cpf = None
+    def __init__(self,nome,cpf):
+        self.nome = nome
+        self.cpf = cpf
 
-    def cadastro_cliente(self, ):
-        pass
+    def alterar_cadastro(self,nome,cpf):
+        self.nome = nome
+        self.cpf = cpf        
 
-    def alterar_cadastro(self, ):
-        pass
-
+    def excluir_cadastro(self)
