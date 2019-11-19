@@ -1,6 +1,3 @@
-#!/usr/bin/python
-#-*- coding: utf-8 -*-
-
 class Computador:
     def __init__(self):
         self.placa_mae = None

@@ -1,6 +1,3 @@
-#!/usr/bin/python
-#-*- coding: utf-8 -*-
-
 class Comp_Gabinete:
     def __init__(self):
         self.modelo = None

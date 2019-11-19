@@ -1,7 +1,6 @@
 import Classe from classe
 
 def menu():
-
     print("[A] Menu Clientes")
     print("[B] Menu Computador")
     print("[C] Fechar Compra")

@@ -1,6 +1,3 @@
-#!/usr/bin/python
-#-*- coding: utf-8 -*-
-
 class Comp_Placa_mae:
     def __init__(self, modelo, preco, socket_processador, socket_memoria_ram, socket, voltagem):
         self.modelo = modelo

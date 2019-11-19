@@ -1,6 +1,3 @@
-#!/usr/bin/python
-#-*- coding: utf-8 -*-
-
 class Compatibilidade:
     def __init__(self):
         self.sockets = None
