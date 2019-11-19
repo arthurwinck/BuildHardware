@@ -1,4 +1,4 @@
-import Classe from classe
+import Cliente from cliente
 
 def menu():
     print("[A] Menu Clientes")
@@ -43,6 +43,12 @@ if menu == "A":
     menu_cliente = menu_cliente()
 
     if menu_cliente == "A":
+        nome = str(input("Escreva o nome do cliente: "))
+        cpf = str(input("Escreva o CPF: "))
+        cliente = __init__(nome,cpf)
+    
+    elif menu_cliente = "B":
+        change = str(input("O que você quer mudar?"))
             
 
 
