@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
-class Fonte:
+class Comp_Fonte:
     def __init__(self):
         self.modelo = None
         self.preco = None

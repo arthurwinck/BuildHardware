@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
-class Placa_mãe:
+class Comp_Placa_mãe:
     def __init__(self):
         self.modelo = None
         self.preco = None
