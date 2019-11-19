@@ -1,45 +1,71 @@
-from placa_mae import Placa_mae
+from Placa_mae import Comp_Placa_mae
 
 
-def Escolher_Placa_mae():
-    nome_do_componente = Placa_mae
-    at1 = {'a1': "PotatoBoard 8000",
-           'a2': 500,
-           'a3': "1155",
-           'a4': "DDR3",
-           'a5': "Micro-ATX",
-           'a6': 90}
-    at2 = {'b1': "PotatoBoard 8000",
-           'b2': 500,
-           'b3': "1155",
-           'b4': "DDR3",
-           'b5': "Micro-ATX",
-           'b6': 90}
-    at3 = {'c1': "PotatoBoard 8000",
-           'c2': 500,
-           'c3': "1155",
-           'c4': "DDR3",
-           'c5': "Micro-ATX",
-           'c6': 90}
-    at4 = {'d1': "PotatoBoard 8000",
-           'd2': 500,
-           'd3': "1155",
-           'd4': "DDR3",
-           'd5': "Micro-ATX",
-           'd6': 90}
-    print('='*20, 'MotherBoards', '='*20)
-    print('-'*20, f'Primeiro Produto:', '-'*20)
-    print(f'Modelo: {at1["a1"]}',
-          f'Preço: R${at1["a2"]},00',
-          f'Socket do Processador: {at1["a3"]}\n'
-          f'Socket da Memória Ram: {at1["a4"]}\n'
-          f'Tamanho da Placa Mãe: {at1["a5"]}\n'
-          f'Voltagem consumida: {at1["a6"]}\n')
-    componente1 = nome_do_componente(at1['a1'],
-                                     at1['a2'],
-                                     at1['a3'],
-                                     at1['a4'],
-                                     at1['a5'],
-                                     at1['a6'])
+def Escolher_Comp_Placa_mae():
 
-batata = Escolher_Placa_mae()
+    nome_componente = Comp_Placa_mae
+
+    name_at1 = 'Modelo'
+    name_at2 = 'Preço'
+    name_at3 = 'Socket do Processador'
+    name_at4 = 'Socket da Memória RAM'
+    name_at5 = 'Tamanho da Placa Mãe'
+    name_at6 = 'Voltagem Consumida'
+    # de acordo com a quantidade de atributos
+
+    atributo = [{name_at1: "PotatoBoard 8000",
+                name_at2: 500,
+                name_at3: "1155",
+                name_at4: "DDR3",
+                name_at5: "Micro-ATX",
+                name_at6: 90},
+                {name_at1: "TomatoBoard 9000",
+                 name_at2: 450,
+                 name_at3: "AM3+",
+                 name_at4: "DDR4",
+                 name_at5: "ATX",
+                 name_at6: 80},
+                {name_at1: "PepinoBoard 7000",
+                 name_at2: 350,
+                 name_at3: 1155,
+                 name_at4: "DDR3",
+                 name_at5: "Micro-ATX",
+                 name_at6: 70},
+                {name_at1: "SpinachBoard 6000",
+                 name_at2: 300,
+                 name_at3: "AM3+",
+                 name_at4: "DDR4",
+                 name_at5: "ATX",
+                 name_at6: 50}]
+    # de acordo com a quantidade de objetos
+
+    contador = ['Primeiro', 'Segundo', 'Terceiro', 'Quarto']  # de acordo com a quantidade de objetos
+    contador2 = ['A', 'B', 'C', 'D']  # de acordo com a quantidade de objetos
+
+    print ('=' * 20, 'MotherBoards', '=' * 20)
+    c = 0
+    for n in atributo:
+        print('-'*15, f'{contador[c]} Produto: [{contador2[c]}] ', '-'*15)
+        for k, v in n.items():
+            print(f'{k}: {v}')
+        c += 1
+    print('='*52)
+
+    while True:
+        res = input(f'Qual modelo você quer adicionar{contador2}: ').upper()
+        if res in contador2:
+            break
+        else:
+            print('-'*15)
+            print('Modelo Invalido !!!\n'
+                  'Tente Outro Modelo')
+            print ('-' * 15)
+    print ('=' * 52)
+
+    posi = contador2.index(res)
+    list = []
+    for k in atributo[posi].values():
+        list.append(k)
+    componente = nome_componente(list[0], list[1], list[2], list[3], list[4], list[5])
+                                                                                # de acordo com a quantidade de tributos
+
