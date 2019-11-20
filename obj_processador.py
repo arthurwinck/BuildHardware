@@ -3,8 +3,6 @@ from Processador import Comp_Processador
 
 def Escolher_Comp_Processador():
 
-    nome_componente = Comp_Processador
-
     name_at1 = 'Modelo'
     name_at2 = 'Preço'
     name_at3 = 'Socket'
@@ -56,5 +54,15 @@ def Escolher_Comp_Processador():
     list = []
     for k in atributo[posi].values():
         list.append(k)
-    componente = nome_componente(list[0], list[1], list[2], list[3])
-                                                                          # de acordo com a quantidade de tributos
+    
+    
+    obj_processador = list[0]
+    obj_processador = Comp_Processador(list[0], list[1], list[2], list[3])   # de acordo com a quantidade de tributos
+    
+    
+    return obj_processador
+    
+obj_processador = Escolher_Comp_Processador()
+print(obj_processador.preco)
+
+

@@ -9,8 +9,8 @@ from Armazenamento import Comp_Armazenamento
 
 
 class Computador:
-    def __init__(self):
-        self.placa_mae = Comp_Placa_mae()
+    def __init__(self,placa_mae,processador,processador_grafico,memoria_ram,fonte,gabinete,perifericos,armazenamento):
+        self.placa_mae = placa_mae_comp
         self.processador = Comp_Processador()
         self.processador_grafico = Comp_Processador_grafico()
         self.memoria_ram = Comp_Memoria_ram()
@@ -18,3 +18,7 @@ class Computador:
         self.gabinete = Comp_Gabinete()
         self.perifericos = Comp_Perifericos()
         self.armazenamento = Comp_Armazenamento()
+    
+    def montar_comp(self):
+        Escolher_Comp_Processador()
+        Escolher_C

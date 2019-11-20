@@ -1,4 +1,4 @@
-import Cliente from cliente
+from Cliente import cliente
 
 def menu():
     print("[A] Menu Clientes")
@@ -45,7 +45,7 @@ if menu == "A":
     if menu_cliente == "A":
         nome = str(input("Escreva o nome do cliente: "))
         cpf = str(input("Escreva o CPF: "))
-        cliente = __init__(nome,cpf)
+        novo_cliente = Cliente(nome,cpf)
     
     elif menu_cliente = "B":
         change = str(input("O que você quer mudar?"))
@@ -55,5 +55,12 @@ if menu == "A":
 elif menu == "B":
 
     menu_build = menu_build()
+
+    if menu_build == "A":
+        nome_build = str(input("Escreva o nome da Build: "))
+        nome_build = Computador()
+        lista_build.append(nome_build)
+        
+    if menu_build == "B":
 
     
