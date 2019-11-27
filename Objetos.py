@@ -64,7 +64,7 @@ def Escolher_Placa_mae():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_placa_mae = Classes.Placa_mae (list[0], list[1], list[2], list[3], list[4], list[5])
+    obj_placa_mae = [list[0], list[1], list[2], list[3], list[4], list[5]]
     # Nome do componente e de acordo com a quantidade de tributos
 
     return obj_placa_mae  # Nome do Componente
@@ -123,7 +123,7 @@ def Escolher_Processador():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_processador = Classes.Processador(list[0], list[1], list[2], list[3])
+    obj_processador = [list[0], list[1], list[2], list[3]]
     # Nome do Componente e de acordo com a quantidade de tributos
 
     return obj_processador  # Nome do Componente
@@ -171,7 +171,7 @@ def Escolher_Processador_grafico():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_processador_grafico = Classes.Processador_grafico (list[0], list[1], list[2])
+    obj_processador_grafico =  [list[0], list[1], list[2]]
     # Nome do Componente e de acordo com a quantidade de tributos
 
     return obj_processador_grafico  # Nome do Componente
@@ -222,7 +222,7 @@ def Escolher_Memoria_ram():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_memoria_ram = Classes.Memoria_ram (list[0], list[1], list[2], list[3])
+    obj_memoria_ram = [list[0], list[1], list[2], list[3]]
     # Nome do Componente e de acordo com a quantidade de tributos
 
     return obj_memoria_ram  # Nome do Componente
@@ -270,7 +270,7 @@ def Escolher_Fonte():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_fonte = Classes.Fonte (list[0], list[1], list[2])
+    obj_fonte = [list[0], list[1], list[2]]
     # Nome do Componente e de acordo com a quantidade de tributos
 
     return obj_fonte  # Nome do Componente
@@ -318,7 +318,7 @@ def Escolher_Gabinete():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_gabinete = Classes.Gabinete (list[0], list[1], list[2])
+    obj_gabinete = [list[0], list[1], list[2]]
     # Nome do Componente e de acordo com a quantidade de tributos
 
     return obj_gabinete  # Nome do Componente
@@ -363,7 +363,7 @@ def Escolher_Armazenamento():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_armazenamento = Classes.Armazenamento (list[0], list[1])
+    obj_armazenamento = [list[0], list[1]]
     # Nome do Componente e de acordo com a quantidade de tributos
 
     return obj_armazenamento  # Nome do Componente
