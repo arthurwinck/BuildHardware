@@ -103,10 +103,6 @@ class Carrinho:
             elif met_fret == 'C':
                 self.preco_frete = 'VIP = R$0,00'
 
-    def var_total(self):
-        soma_preco = 2 
-        soma_frete = 3
-        self.preco_total = soma_frete + soma_preco
 
 
 
