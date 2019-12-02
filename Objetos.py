@@ -64,10 +64,9 @@ def Escolher_Placa_mae():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_placa_mae = [list[0], list[1], list[2], list[3], list[4], list[5]]
-    # Nome do componente e de acordo com a quantidade de tributos
-
-    return obj_placa_mae  # Nome do Componente
+    obj_placa_mae = Classes.Placa_mae(list[0], list[1], list[2], list[3], list[4], list[5])
+    
+    return obj_placa_mae
 
 
 def Escolher_Processador():
@@ -93,7 +92,7 @@ def Escolher_Processador():
                  name_at2: 700,
                  name_at3: "1155",
                  name_at4: 90}]
-    # de acordo com a quantidade de objetos
+    # de acordo com a quantidade de objEetos
 
     contador = ['Primeiro', 'Segundo', 'Terceiro', 'Quarto']  # de acordo com a quantidade de objetos
     contador2 = ['A', 'B', 'C', 'D']  # de acordo com a quantidade de objetos
@@ -123,11 +122,9 @@ def Escolher_Processador():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_processador = [list[0], list[1], list[2], list[3]]
-    # Nome do Componente e de acordo com a quantidade de tributos
+    obj_processador = Classes.Processador(list[0], list[1], list[2], list[3])
 
-    return obj_processador  # Nome do Componente
-
+    return obj_processador
 
 def Escolher_Processador_grafico():
     name_at1 = 'Modelo'
@@ -171,11 +168,9 @@ def Escolher_Processador_grafico():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_processador_grafico =  [list[0], list[1], list[2]]
-    # Nome do Componente e de acordo com a quantidade de tributos
+    obj_processador_grafico = Classes.Processador_grafico(list[0], list[1], list[2])
 
-    return obj_processador_grafico  # Nome do Componente
-
+    return obj_processador_grafico
 
 def Escolher_Memoria_ram():
     name_at1 = 'Modelo'
@@ -222,11 +217,9 @@ def Escolher_Memoria_ram():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_memoria_ram = [list[0], list[1], list[2], list[3]]
-    # Nome do Componente e de acordo com a quantidade de tributos
-
-    return obj_memoria_ram  # Nome do Componente
-
+    obj_memoria_ram = Classes.Memoria_ram(list[0], list[1], list[2], list[3])
+    
+    return obj_memoria_ram
 
 def Escolher_Fonte():
     name_at1 = 'Modelo'
@@ -270,10 +263,9 @@ def Escolher_Fonte():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_fonte = [list[0], list[1], list[2]]
-    # Nome do Componente e de acordo com a quantidade de tributos
-
-    return obj_fonte  # Nome do Componente
+    obj_fonte = Classes.Fonte(list[0], list[1], list[2])
+  
+    return obj_fonte
 
 
 def Escolher_Gabinete():
@@ -318,11 +310,9 @@ def Escolher_Gabinete():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_gabinete = [list[0], list[1], list[2]]
-    # Nome do Componente e de acordo com a quantidade de tributos
-
-    return obj_gabinete  # Nome do Componente
-
+    obj_gabinete = Classes.Gabinete(list[0], list[1], list[2])
+    
+    return obj_gabinete
 
 def Escolher_Armazenamento():
     name_at1 = 'Modelo'
@@ -363,7 +353,7 @@ def Escolher_Armazenamento():
     for k in atributo[posi].values ():
         list.append (k)
 
-    obj_armazenamento = [list[0], list[1]]
-    # Nome do Componente e de acordo com a quantidade de tributos
+    obj_armazenamento = Classes.Armazenamento(list[0], list[1])
+    
+    return obj_armazenamento
 
-    return obj_armazenamento  # Nome do Componente

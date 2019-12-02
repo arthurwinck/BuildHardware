@@ -136,11 +136,10 @@ while True:
                 nome_cliente = str(input('Qual o nome do Cliente a qual essa Build será montada?')).upper()
                 
                 for x in range(len(lista_clientes)):
-                    for y in range(3):
-                        if nome == lista_clientes[x][y]:
-                                print("Dados inválidos, tente novamente")
-                                cont_verifica_nome = 1
-                                break
+                    if nome == lista_clientes[x][0]:
+                        print("Dados inválidos, tente novamente")
+                        cont_verifica_nome = 1
+                        break
 
                 if cont_verifica_nome == 0:
                     print("Esse cliente não está cadastrado ainda!")

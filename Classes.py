@@ -1,12 +1,21 @@
 import datetime
+class Computador:
+    def __init__(self):
+        self.computador = []
+
+    def imprimir_comp(self):
+        print(self.computador)
+
+    def __del__(self):
+        print("Sua build foi exclúida")        
+
 
 class Pecas:
     def __init__(self,modelo,preco):
         self.modelo = modelo
         self.preco = preco
         
-
-
+        
 class Placa_mae(Pecas):
     def __init__(self, modelo, preco, socket_processador, socket_memoria_ram, socket, voltagem):
     
@@ -105,14 +114,25 @@ class Carrinho:
 
 
 
-
 class Cliente:
     def __init__(self, nome, cpf, vip):
         self.nome = nome
         self.cpf = cpf
         self.vip = vip
 
-    
+    def alterar_cadastro(self,alt):
+        if alt == 'A':
+            self.nome = str(input("Digite o novo nome: ")).upper()
+        elif alt == 'B':
+            self.cpf = int(input("Digite o novo cpf: "))
+        elif alt == 'C':
+            self.vip = str(input("Mude a condição do VIP [S]/[N]: ")).upper()
+
+    def __del__(self):
+        print("O cadastro foi excluído")
+
+    def imprimir(self,clientes):
+        print(clientes)
 
 
 class Cliente_VIP (Cliente):
